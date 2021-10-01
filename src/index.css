@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-height: 100vh;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  box-sizing: border-box;
+  margin:auto;
+  margin-top:10rem;
+  background-color: #F6F9FC; }
+
+code {
+  font-family: 'Open Sans', sans-serif;
+}
