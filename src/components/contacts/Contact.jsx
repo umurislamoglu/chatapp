@@ -1,15 +1,23 @@
-import React from 'react'
-import ContactImage from './ContactImage';
-import ContactText from './ContactText';
+import React from "react";
+import ContactImage from "./ContactImage";
+import ContactText from "./ContactText";
 
 const Contact = (props) => {
+  const handleContactClick = (e) => {
+    let childrens = e.currentTarget.parentElement.children;
+    [...childrens].forEach((child) => {
+      child.className = "contact";
+    });
 
-    return (
-        <div className={`contact ${props.active}`}>
-            <ContactImage/>
-            <ContactText/>
-        </div>
-    )
-}
+    e.currentTarget.className = "contact activeContact";
+  };
 
-export default Contact
+  return (
+    <div className={`contact`} onClick={handleContactClick}>
+      <ContactImage />
+      <ContactText />
+    </div>
+  );
+};
+
+export default Contact;

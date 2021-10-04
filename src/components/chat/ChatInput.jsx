@@ -5,7 +5,7 @@ const ChatInput = () => {
         <div className="chatInput">
             <textarea type="text" className="messageInput" placeholder="Message..."  required />
             <div className="buttonBox">
-            <button className="sendButton"><i class="bi bi-symmetry-horizontal"></i></button>
+            <button className="sendButton"><i className="bi bi-symmetry-horizontal"></i></button>
 
             </div>
         </div>
